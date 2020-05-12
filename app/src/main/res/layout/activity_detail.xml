@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".DetailActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:padding="10dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="2">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,7 +26,6 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center_vertical"
                     android:text="Umur" />
 
             </LinearLayout>
@@ -36,12 +35,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1">
 
-                <EditText
-                    android:id="@+id/etUmur"
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Umur"
-                    android:inputType="number" />
+                    android:text="Data" />
 
             </LinearLayout>
 
@@ -60,7 +57,6 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center_vertical"
                     android:text="Berat Badan" />
 
             </LinearLayout>
@@ -70,17 +66,14 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1">
 
-                <EditText
-                    android:id="@+id/etBB"
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Berat Badan"
-                    android:inputType="number" />
+                    android:text="Data" />
 
             </LinearLayout>
 
         </LinearLayout>
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -95,8 +88,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:text="Tinggi" />
+                    android:text="Tinggi Badan" />
 
             </LinearLayout>
 
@@ -105,12 +97,41 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1">
 
-                <EditText
-                    android:id="@+id/etTinggi"
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Tinggi"
-                    android:inputType="number" />
+                    android:text="Data" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Jenis Kelamin" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Data" />
 
             </LinearLayout>
 
@@ -130,8 +151,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:text="Jenis Kelamin" />
+                    android:text="BMI" />
 
             </LinearLayout>
 
@@ -140,10 +160,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1">
 
-                <Spinner
-                    android:id="@+id/SpinJenisKelamin"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Data" />
 
             </LinearLayout>
 
@@ -153,19 +173,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <Button
-                android:id="@+id/btHitung"
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Hitung" />
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Hasil"/>
 
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/hasilBMI"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Hasil"/>
 
     </LinearLayout>
 
