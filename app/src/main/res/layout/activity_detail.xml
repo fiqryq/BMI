@@ -8,7 +8,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
         android:padding="10dp"
         android:orientation="vertical"
         android:weightSum="2">
@@ -39,6 +40,7 @@
                     android:id="@+id/datUmur"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:textStyle="bold"
                     android:text="Data" />
 
             </LinearLayout>
@@ -71,6 +73,7 @@
                     android:id="@+id/datBB"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:textStyle="bold"
                     android:text="Data" />
 
             </LinearLayout>
@@ -103,6 +106,7 @@
                     android:id="@+id/datTB"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:textStyle="bold"
                     android:text="Data" />
 
             </LinearLayout>
@@ -135,6 +139,7 @@
                     android:id="@+id/datKEL"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:textStyle="bold"
                     android:text="Data" />
 
             </LinearLayout>
@@ -167,6 +172,7 @@
                     android:id="@+id/datBMI"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:textStyle="bold"
                     android:text="Data" />
 
             </LinearLayout>
@@ -200,6 +206,7 @@
                     android:id="@+id/datHasil"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:textStyle="bold"
                     android:text="Data" />
 
             </LinearLayout>
