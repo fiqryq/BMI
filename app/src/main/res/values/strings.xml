@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">BMI</string>
+
+    <string-array name="jenis_kelamin">
+        <item>Laki Laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
 </resources>
