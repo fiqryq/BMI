@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BMI</string>
+    <string name="app_name">HITUNG BMI</string>
 
     <string-array name="jenis_kelamin">
         <item>Laki Laki</item>
