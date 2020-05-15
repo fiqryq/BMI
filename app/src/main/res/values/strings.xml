@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Hitung BMI</string>
 
+    <string name="admob_app_id">ca-app-pub-6749399681036663~6911987270</string>
+    <string name="admob_banner_ads">ca-app-pub-6749399681036663/2781170576</string>
+
     <string-array name="jenis_kelamin">
         <item>Laki Laki</item>
         <item>Perempuan</item>
