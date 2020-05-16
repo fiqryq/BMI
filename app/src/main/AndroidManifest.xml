@@ -16,7 +16,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.suncode.bmi.MainActivity" />
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
