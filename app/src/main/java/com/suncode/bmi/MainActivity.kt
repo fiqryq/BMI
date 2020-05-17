@@ -50,31 +50,39 @@ class MainActivity : AppCompatActivity() {
         }
 
         btHitung.setOnClickListener {
-            val umur = etUmur.text.toString()
-            val bb = etBB.text.toString().toFloat()
-            val tinggi = etTinggi.text.toString().toFloat() / 100
-            val hasil = bb / (tinggi * tinggi)
+            if(TextUtils.isEmpty(etUmur.text)){
+                Toast.makeText(applicationContext,"Harap Isi Form Umur",Toast.LENGTH_LONG).show()
+            }else if (TextUtils.isEmpty(etBB.text)){
+                Toast.makeText(applicationContext,"Harap Isi Form Berat Badan",Toast.LENGTH_LONG).show()
+            }else if (TextUtils.isEmpty(etTinggi.text)){
+                Toast.makeText(applicationContext,"Harap Isi Form Tinggi",Toast.LENGTH_LONG).show()
+            } else {
+                val umur = etUmur.text.toString()
+                val bb = etBB.text.toString().toFloat()
+                val tinggi = etTinggi.text.toString().toFloat() / 100
+                val hasil = bb / (tinggi * tinggi)
 
-            if (hasil < 17) {
-                hasilBMI = "Kurus, Kekurangan berat badan berat"
-            } else if (hasil >= 17 && hasil <= 18.0) {
-                hasilBMI = "Kurus, Kekurangan berat badan ringan"
-            } else if (hasil >= 18.5 && hasil <= 25.0) {
-                hasilBMI = "Normal"
-            } else if (hasil >= 25.1 && hasil <= 27.0) {
-                hasilBMI = "Gemuk, Kelebihan berat badan tingkat ringan"
-            } else if (hasil > 27) {
-                hasilBMI = "Gemuk, Kelebihan berat badan tingkat berat"
+                if (hasil < 17) {
+                    hasilBMI = "Kurus, Kekurangan berat badan berat"
+                } else if (hasil >= 17 && hasil <= 18.0) {
+                    hasilBMI = "Kurus, Kekurangan berat badan ringan"
+                } else if (hasil >= 18.5 && hasil <= 25.0) {
+                    hasilBMI = "Normal"
+                } else if (hasil >= 25.1 && hasil <= 27.0) {
+                    hasilBMI = "Gemuk, Kelebihan berat badan tingkat ringan"
+                } else if (hasil > 27) {
+                    hasilBMI = "Gemuk, Kelebihan berat badan tingkat berat"
+                }
+
+                val intent = Intent(this, DetailActivity::class.java)
+                intent.putExtra("UMUR", umur)
+                intent.putExtra("BB", bb.toString())
+                intent.putExtra("TB", tinggi.toString())
+                intent.putExtra("JK", spinJenisKelamin)
+                intent.putExtra("BMINUM", hasil.toString())
+                intent.putExtra("BMIRES", hasilBMI)
+                startActivity(intent)
             }
-
-            val intent = Intent(this, DetailActivity::class.java)
-            intent.putExtra("UMUR", umur)
-            intent.putExtra("BB", bb.toString())
-            intent.putExtra("TB", tinggi.toString())
-            intent.putExtra("JK", spinJenisKelamin)
-            intent.putExtra("BMINUM", hasil.toString())
-            intent.putExtra("BMIRES", hasilBMI)
-            startActivity(intent)
         }
     }
 }
