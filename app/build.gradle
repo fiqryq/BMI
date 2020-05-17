@@ -3,6 +3,20 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
+    def versionPropsFile = file('version.properties')
+    Properties versionProps = new Properties()
+
+    if (versionPropsFile.canRead()) {
+        versionProps.load(new FileInputStream(versionPropsFile))
+    } else {
+        versionProps['VERSION_CODE'] = '0'
+    }
+
+    def code = versionProps['VERSION_CODE'].toInteger()
+
+    versionProps['VERSION_CODE'] = code.toString()
+    versionProps.store(versionPropsFile.newWriter(), null)
+
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
 
@@ -12,9 +26,28 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        def nameAPK = "bmi"
+
+        setProperty("archivesBaseName", nameAPK + versionName + "#" + code + "-"
+                + new Date().format('ddMMyy'))
+
+        resConfigs "en", "id"
+        vectorDrawables.useSupportLibrary = true
     }
+
+    signingConfigs {
+        release {
+            // You need to specify either an absolute path or include the
+            // keystore file in the same directory as the build.gradle file.
+            storeFile file("suncodejks.jks")
+            storePassword "suncode2020"
+            keyAlias "Suncode"
+            keyPassword "suncode2020"
+        }
+    }
+
 
     buildTypes {
         release {
