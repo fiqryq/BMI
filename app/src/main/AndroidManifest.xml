@@ -11,12 +11,12 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetailActivity" android:label="Detail BMI">
+        <activity android:name=".DetailActivity" android:label="Detail BMI" android:theme="@style/DetailTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.suncode.bmi.MainActivity" />
         </activity>
-        <activity android:name=".MainActivity" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

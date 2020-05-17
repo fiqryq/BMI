@@ -23,12 +23,12 @@ class DetailActivity : AppCompatActivity() {
         ads()
 
         val intent = Intent(getIntent())
-        datUmur.text = ": " + intent.getStringExtra("UMUR")
-        datBB.text = ": " + intent.getStringExtra("BB") + " kg"
-        datTB.text = ": " + intent.getStringExtra("TB") + " m"
-        datKEL.text = ": " + intent.getStringExtra("JK")
-        datBMI.text = ": " + intent.getStringExtra("BMINUM")
-        datHasil.text = ": " + intent.getStringExtra("BMIRES")
+        datUmur.text = intent.getStringExtra("UMUR")
+        datBB.text = intent.getStringExtra("BB") + " kg"
+        datTB.text = intent.getStringExtra("TB") + " m"
+        datKEL.text = intent.getStringExtra("JK")
+        datBMI.text = intent.getStringExtra("BMINUM")
+        datHasil.text = intent.getStringExtra("BMIRES")
 
     }
 

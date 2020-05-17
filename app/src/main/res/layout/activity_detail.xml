@@ -18,6 +18,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:weightSum="2">
 
             <LinearLayout
@@ -35,12 +36,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/abu"
                 android:layout_weight="1">
 
                 <TextView
                     android:id="@+id/datUmur"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:textAllCaps="true"
                     android:textStyle="bold"
                     android:text="Data" />
 
@@ -51,6 +54,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:weightSum="2">
 
             <LinearLayout
@@ -68,12 +72,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/abu"
                 android:layout_weight="1">
 
                 <TextView
                     android:id="@+id/datBB"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:textAllCaps="true"
                     android:textStyle="bold"
                     android:text="Data" />
 
@@ -84,6 +90,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:weightSum="2">
 
             <LinearLayout
@@ -101,12 +108,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/abu"
                 android:layout_weight="1">
 
                 <TextView
                     android:id="@+id/datTB"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:textAllCaps="true"
                     android:textStyle="bold"
                     android:text="Data" />
 
@@ -117,6 +126,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:weightSum="2">
 
             <LinearLayout
@@ -134,12 +144,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/abu"
                 android:layout_weight="1">
 
                 <TextView
                     android:id="@+id/datKEL"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:textAllCaps="true"
                     android:textStyle="bold"
                     android:text="Data" />
 
@@ -150,6 +162,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:weightSum="2">
 
             <LinearLayout
@@ -167,12 +180,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/abu"
                 android:layout_weight="1">
 
                 <TextView
                     android:id="@+id/datBMI"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:textAllCaps="true"
                     android:textStyle="bold"
                     android:text="Data" />
 
@@ -183,6 +198,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:layout_marginBottom="10dp"
             android:weightSum="2">
 
@@ -201,12 +217,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/abu"
                 android:layout_weight="1">
 
                 <TextView
                     android:id="@+id/datHasil"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:textAllCaps="true"
                     android:textStyle="bold"
                     android:text="Data" />
 

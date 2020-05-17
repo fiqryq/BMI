@@ -23,12 +23,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        numberpicker.minValue = 0
-        numberpicker.maxValue = 80
-        numberpicker.wrapSelectorWheel = true
-        numberpicker.setOnValueChangedListener { picker, oldVal, newVal -> }
-
-
         val JenisKelamin: Spinner = findViewById(R.id.SpinJenisKelamin)
         ArrayAdapter.createFromResource(
             this,
